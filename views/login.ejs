@@ -1,0 +1,23 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minipro</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class="w-full min-h-screen bg-zinc-900 text-white">
+        <h1 class=" px-15 py-10 text-bold text-5xl">Login Account</h1>
+        <form class="p-15 py-0" action="/login" method="post">
+           
+         <input class="m-1 outline-none px-3 py-2 rounded-md bg-transparent border-2 border-zinc-700"  type="text" placeholder="Enter your Username" name="username">
+         <input class="m-1 outline-none px-3 py-2 rounded-md bg-transparent border-2 border-zinc-700"  type="email" placeholder="Enter your email id" name="email">
+         <input class="m-1 outline-none px-3 py-2 rounded-md bg-transparent border-2 border-zinc-700"  type="password" placeholder="Create password" name="password">
+         <button class="m-1 text-white px-3 py-2 rounded-md bg-yellow-600 border-1 border-zinc-700" type="submit">Login user</button>
+        </form>
+
+    </div>
+</body>
+</html>

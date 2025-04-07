@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minipro</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <div class="px-7 w-screen min-h-screen bg-zinc-900 text-white">
+      <h1 class="px-15 py-10 text-bold text-5xl">Upload Profile Picture</h1>
+      <form
+        class="p-15 py-0"
+        action="/upload"
+        method="post"
+        enctype="multipart/form-data"
+      >
+        <input
+          type="file"
+          name="image"
+          class="m-1 w-1/5 outline-none px-3 py-2 rounded-md bg-transparent border-2 border-zinc-700"
+        />
+        <button
+          class="m-1 text-white px-3 py-2 rounded-md bg-blue-600 border-1 border-zinc-700"
+          type="submit"
+        >
+          submit user profile
+        </button>
+      </form>
+    </div>
+  </body>
+</html>

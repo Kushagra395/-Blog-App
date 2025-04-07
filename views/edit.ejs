@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Minipro</title>
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+</head>
+<body>
+    <div class=" px-7 w-full min-h-screen bg-zinc-900 text-white">
+        <div class="w-full flex justify-end">
+            <a href="/logout" class="px-2 pt-2 mb-2  text-red-400 hover:text-red-800">Logout</a>  
+        </div>
+        
+       
+        <h2 class=" text-xl text-zinc-200 font-light">Edit your post</h2>
+        <form action="/update/<%=post._id%>" method="post">
+            <textarea  placeholder=" What's new in mind?" class=" p-2 pb-1 resize-none   w-1/3 block  bg-transparent border-zinc-700 border-2 my-4 mb-2 rounded-lg" name="content"><%=post.content%></textarea>
+            <button class="  h-10 w-40 bg-yellow-500 hover:bg-yellow-700 rounded-lg text-white rounded-l block  font-light">Update post</button>
+            
+        </form>
+
+</body>
+</html>
